@@ -1,1 +1,4 @@
 com/dev/ProductCatalogService/ProductCatalogServiceApplication.class
+com/dev/ProductCatalogService/service/impl/DummyProductService.class
+com/dev/ProductCatalogService/service/IProductService.class
+com/dev/ProductCatalogService/dto/CategoryDto.class
