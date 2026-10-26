@@ -30,7 +30,13 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public ResponseEntity<ProductDto> getProductById(@PathVariable("id") Long id) {
+        if(id < 0){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
         Product product = productService.getProductById(id);
+        if(product == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>(from(product), HttpStatus.OK);
     }
 
