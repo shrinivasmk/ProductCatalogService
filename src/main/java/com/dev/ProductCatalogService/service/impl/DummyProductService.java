@@ -44,7 +44,7 @@ public class DummyProductService implements IProductService {
 
         Category category = new Category();
         category.setName(dto.getCategory());
-        product.setCatagory(category);
+        product.setCategory(category);
         return product;
     }
 }

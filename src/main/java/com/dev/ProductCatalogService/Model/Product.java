@@ -11,5 +11,5 @@ public class Product extends BaseEntity{
     private Double price;
     private String description;
     private String imageUrl;
-    private Category catagory;
+    private Category category;
 }
