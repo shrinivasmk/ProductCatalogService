@@ -3,11 +3,13 @@ package com.dev.ProductCatalogService.dto;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 public class ProductDto {
     private String name;
-    private Double price;
+    private BigDecimal price;
     private String description;
     private CategoryDto category;
 }
